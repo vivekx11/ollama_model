@@ -9,7 +9,7 @@ async function enhancePrompt() {
         showStatus('Please enter a prompt to enhance', 'error');
         return;
     }
-
+// basic js
     enhanceBtn.disabled = true;
     copyBtn.disabled = true;
     enhancedPromptArea.value = '';
