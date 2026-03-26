@@ -77,3 +77,5 @@ Open your browser and navigate to: http://localhost:5000
     ├── style.css         # Styling
     └── script.js         # Frontend logic
 ```
+
+IN DEVELOPMENT PHASE 
