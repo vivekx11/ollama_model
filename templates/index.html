@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Enhancer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AI Prompt Enhancer</h1>
+            <p>Transform simple prompts into professional, detailed prompts</p>
+        </header>
+
+        <div class="content">
+            <div class="input-section">
+                <label for="userPrompt">Enter Your Prompt:</label>
+                <textarea id="userPrompt" placeholder="Type your basic prompt here..."></textarea>
+                <button id="enhanceBtn" onclick="enhancePrompt()">Enhance Prompt</button>
+            </div>
+
+            <div class="output-section">
+                <label for="enhancedPrompt">Enhanced Prompt:</label>
+                <textarea id="enhancedPrompt" readonly placeholder="Your enhanced prompt will appear here..."></textarea>
+                <button id="copyBtn" onclick="copyToClipboard()" disabled>Copy to Clipboard</button>
+            </div>
+        </div>
+
+        <div id="status" class="status"></div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
